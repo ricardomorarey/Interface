@@ -25,7 +25,7 @@
             app:layout_constraintHorizontal_bias="0.0"/>
 
     <TextView
-            android:textColor="@color/colorPrimaryText"
+            android:textColor="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -38,7 +38,7 @@
 
     <TextView
             android:textColor="@color/colorPrimaryText"
-
+            style="@style/Widget.AppCompat.Spinner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/nav_header_subtitle"
