@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/left_drawer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:background="@color/colorPrimary"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearImageUserIzq"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_menu_send"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearImageUserDer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Bienvenido"
+                android:textColor="@color/colorPrimaryText"
+                />
+
+            <TextView
+                android:id="@+id/txtFechaSincro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Ultima sincronizacion"
+                android:textColor="@color/colorPrimaryText"
+                />
+
+            <TextView
+                android:id="@+id/txtDocumentosSincro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="text_documentos_sincronizados"
+                android:textColor="@color/colorPrimaryText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="0dp"/>
+
+    <TextView
+        android:id="@+id/textViewVersion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|bottom"
+        android:background="@color/colorPrimary"
+        android:gravity="end|bottom"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black_overlay"
+        android:textStyle="italic"
+        />
+</LinearLayout>
