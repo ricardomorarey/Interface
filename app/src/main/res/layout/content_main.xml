@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/app_bar_main"
-        tools:context=".MainActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,113 +25,16 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
             app:layout_constraintVertical_bias="1.0">
 
-           <include layout="@layout/item_input_text"/>
+            <include layout="@layout/item_input_text"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
+            <include layout="@layout/item_imput_text_spinner"/>
 
-                    <ImageView
-                        android:id="@+id/imageView8"
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_group_black_24dp"/>
-
-                    <EditText
-                        android:id="@+id/editText7"
-                        android:layout_width="138dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Name"/>
-
-                    <Spinner
-                        android:id="@+id/spinner"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/imageViewe"
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_group_black_24dp"/>
-
-                    <EditText
-                        android:id="@+id/editTexte"
-                        android:layout_width="138dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Name"/>
-
-                    <Spinner
-                        android:id="@+id/spinner1"
-                        android:layout_width="124dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"/>
-
-                </LinearLayout>
-            </LinearLayout>
+            <include layout="@layout/item_imput_text_spinner"/>
 
             <include layout="@layout/item_input_text"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <include layout="@layout/item_input_text"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/imageViewr"
-                        android:layout_width="101dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_group_black_24dp"/>
-
-                    <EditText
-                        android:id="@+id/editTextf"
-                        android:layout_width="397dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="Name"/>
-
-                </LinearLayout>
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -158,12 +61,11 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:clickable="true"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
             app:srcCompat="@drawable/ic_launcher_inbox_bici_person_circle"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </androidx.core.widget.NestedScrollView>
