@@ -55,6 +55,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimaryDark"
                 android:text="CREATE ACCOUNT"
+                android:textColor="@android:color/white"
                 />
         </LinearLayout>
 
@@ -132,7 +133,7 @@
                 android:background="?selectableItemBackground"
                 android:fontFamily="sans-serif-black"
                 android:text="Sing In?"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:textColor="#27BB7B"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
