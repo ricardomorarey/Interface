@@ -20,7 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:clickable="true"
         android:ems="10"
+        android:focusable="true"
         android:hint="Name"
         android:inputType="textPersonName"/>
 

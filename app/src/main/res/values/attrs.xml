@@ -9,4 +9,10 @@
         <attr name="metaButtonBarButtonStyle" format="reference"/>
     </declare-styleable>
 
+    <declare-styleable name="PasswordValidator">
+        <attr name="underlineErrorColor" format="color"/>
+        <attr name="underlineSuccessColor" format="color"/>
+        <attr name="textError" format="string"/>
+    </declare-styleable>
+
 </resources>
