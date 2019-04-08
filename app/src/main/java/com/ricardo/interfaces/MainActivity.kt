@@ -11,6 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
+        floatingActionButton3.setOnClickListener { view ->
             val intento1 = Intent(this, LoginActivity::class.java)
             startActivity(intento1)
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
