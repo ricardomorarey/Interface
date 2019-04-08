@@ -16,8 +16,8 @@ class ChicaLayout : AppCompatActivity() {
         setContentView(R.layout.activity_chica_layout)
 
         floatingActionButton.setOnClickListener{ view ->
-            //val intent = Intent (this, MisComponentes::class.java)
-            //startActivity(intent)
+            val intent = Intent (this, Componentes::class.java)
+            startActivity(intent)
         }
 
     }
