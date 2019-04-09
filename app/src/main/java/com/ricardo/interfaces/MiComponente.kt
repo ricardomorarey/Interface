@@ -1,9 +1,8 @@
-package com.ricardo.interfaces.componentes
+package com.ricardo.interfaces
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.RelativeLayout
-import com.ricardo.interfaces.R
 
 class MiComponente(context: Context, attrs: AttributeSet) : RelativeLayout(context, attrs){
 

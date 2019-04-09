@@ -4,14 +4,15 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:orientation="horizontal"
-              android:padding="10dp">
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
-        android:tint="@android:color/darker_gray"
+        android:tint="@color/colorDarkGreyMio"
         app:srcCompat="@drawable/ic_menu_send"/>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -23,19 +24,26 @@
             android:id="@+id/inputNickName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
             android:hint="Name"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <Spinner
         android:id="@+id/spinner2"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:addStatesFromChildren="false"
         android:clickable="true"
         android:contextClickable="true"
-        android:ems="10"/>
+        android:ems="10"
+        android:entries="@array/mockup"
+        android:spinnerMode="dialog"/>
 
 </LinearLayout>
