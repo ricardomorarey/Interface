@@ -1,8 +1,9 @@
-package com.ricardo.interfaces
+package com.ricardo.interfaces.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ricardo.interfaces.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

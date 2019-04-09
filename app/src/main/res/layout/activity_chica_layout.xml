@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChicaLayout">
+    tools:context=".activities.ChicaLayout">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -62,18 +62,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.ricardo.interfaces.SummaryText
+            <com.ricardo.interfaces.componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:st_title="Hola"
                 app:st_summary="Pruebas"/>
 
-            <com.ricardo.interfaces.SummaryText
+            <com.ricardo.interfaces.componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:st_title="Pruebas"
                 app:st_summary="Testo decripinaosjnd"/>
-            <com.ricardo.interfaces.SummaryText
+            <com.ricardo.interfaces.componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
