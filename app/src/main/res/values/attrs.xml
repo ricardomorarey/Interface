@@ -15,4 +15,11 @@
         <attr name="textError" format="string"/>
     </declare-styleable>
 
+
+    <declare-styleable name="SummaryText">
+        <attr name="st_image" format="integer"/>
+        <attr name="st_title" format="string"/>
+        <attr name="st_summary" format="string"/>
+    </declare-styleable>
+
 </resources>
