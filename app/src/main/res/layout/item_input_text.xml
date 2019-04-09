@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-    android:padding="10dp">
+              android:orientation="horizontal"
+              android:padding="10dp">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -14,16 +14,22 @@
         android:tint="@android:color/darker_gray"
         app:srcCompat="@drawable/ic_group_black_24dp"/>
 
-    <EditText
-        android:id="@+id/editText6"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:clickable="true"
-        android:ems="10"
-        android:focusable="true"
-        android:hint="Name"
-        android:inputType="textPersonName"/>
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Name"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </LinearLayout>

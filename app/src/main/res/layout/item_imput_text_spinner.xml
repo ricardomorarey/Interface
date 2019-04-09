@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
+              android:orientation="horizontal"
               android:padding="10dp">
 
     <ImageView
@@ -14,16 +14,18 @@
         android:tint="@android:color/darker_gray"
         app:srcCompat="@drawable/ic_menu_send"/>
 
-    <EditText
-        android:id="@+id/editText6"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        />
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/inputNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Spinner
         android:id="@+id/spinner2"

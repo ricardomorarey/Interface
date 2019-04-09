@@ -13,13 +13,14 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="275dp"
+            android:layout_width="match_parent"
+            android:layout_height="299dp"
             android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/chica2"/>
+            app:srcCompat="@drawable/chica_thum"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton"
