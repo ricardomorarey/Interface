@@ -14,30 +14,6 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-            app:layout_constraintVertical_bias="1.0">
-
-            <include layout="@layout/item_input_text"/>
-
-            <include layout="@layout/item_imput_text_spinner"/>
-
-            <include layout="@layout/item_imput_text_spinner"/>
-
-            <include layout="@layout/item_input_text"/>
-
-            <include layout="@layout/item_input_text"/>
-
-        </LinearLayout>
-
-        <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="218dp"
@@ -66,7 +42,31 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
             app:srcCompat="@drawable/ic_menu_camera"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="1.0">
+
+            <com.ricardo.interfaces.Componentes.ItemMainSpinner
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:ims_editspin="Adios!!"/>
+            <com.ricardo.interfaces.Componentes.ItemMain
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:im_et="Hola f"/>
+
+
+
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </androidx.core.widget.NestedScrollView>

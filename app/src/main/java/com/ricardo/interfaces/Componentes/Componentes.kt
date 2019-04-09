@@ -1,7 +1,8 @@
-package com.ricardo.interfaces
+package com.ricardo.interfaces.Componentes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ricardo.interfaces.R
 
 class Componentes : AppCompatActivity() {
 

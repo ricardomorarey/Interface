@@ -62,18 +62,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.ricardo.interfaces.SummaryText
+            <com.ricardo.interfaces.Componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:st_title="Hola"
                 app:st_summary="Pruebas"/>
 
-            <com.ricardo.interfaces.SummaryText
+            <com.ricardo.interfaces.Componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:st_title="Pruebas"
                 app:st_summary="Testo decripinaosjnd"/>
-            <com.ricardo.interfaces.SummaryText
+            <com.ricardo.interfaces.Componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Componentes">
+    tools:context=".Componentes.Componentes">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -22,14 +22,14 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.ricardo.interfaces.MiComponente
+    <com.ricardo.interfaces.Componentes.MiComponente
         android:id="@+id/miComponente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:padding="16dp"/>
 
-    <com.ricardo.interfaces.MiNomponente2
+    <com.ricardo.interfaces.Componentes.MiNomponente2
         android:id="@+id/miComponente2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

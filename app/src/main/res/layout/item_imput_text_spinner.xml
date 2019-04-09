@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
+              android:layout_height="72dp"
               android:orientation="horizontal"
-              android:paddingLeft="16dp"
-              android:paddingRight="16dp">
+              android:padding="16dp">
+
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
         android:layout_gravity="center"
+        android:layout_marginRight="16dp"
         android:tint="@color/colorDarkGreyMio"
-        app:srcCompat="@drawable/ic_menu_send"/>
+        app:srcCompat="@drawable/ic_person_black_24dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputNickName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:theme="@style/round">
 
         <EditText
-            android:id="@+id/inputNickName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="16dp"
-            android:hint="Name"/>
+            android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
         android:id="@+id/spinner2"
-        style="@style/Widget.AppCompat.Spinner.Underlined"
+        style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="0dp"
         android:layout_weight="1"
         android:addStatesFromChildren="false"
         android:clickable="true"
         android:contextClickable="true"
         android:ems="10"
         android:entries="@array/mockup"
-        android:spinnerMode="dialog"/>
+        android:spinnerMode="dropdown"/>
 
 </LinearLayout>

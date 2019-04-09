@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import androidx.drawerlayout.widget.DrawerLayout
-import com.ricardo.interfaces.Componentes
+import com.ricardo.interfaces.Componentes.Componentes
 import com.ricardo.interfaces.R
 import kotlinx.android.synthetic.main.activity_chica_layout.*
 

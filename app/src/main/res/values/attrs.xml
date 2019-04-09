@@ -1,9 +1,5 @@
 <resources>
 
-    <!-- Declare custom theme attributes that allow changing which styles are
-         used for button bars depending on the API level.
-         ?android:attr/buttonBarStyle is new as of API 11 so this is
-         necessary to support previous API levels. -->
     <declare-styleable name="ButtonBarContainerTheme">
         <attr name="metaButtonBarStyle" format="reference"/>
         <attr name="metaButtonBarButtonStyle" format="reference"/>
@@ -15,11 +11,20 @@
         <attr name="textError" format="string"/>
     </declare-styleable>
 
-
     <declare-styleable name="SummaryText">
         <attr name="st_image" format="integer"/>
         <attr name="st_title" format="string"/>
         <attr name="st_summary" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ItemMain">
+        <attr name="im_image" format="integer"/>
+        <attr name="im_et" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ItemMainSpinner">
+        <attr name="ims_icon" format="integer"/>
+        <attr name="ims_editspin" format="string"/>
     </declare-styleable>
 
 </resources>

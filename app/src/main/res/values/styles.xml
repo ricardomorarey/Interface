@@ -55,4 +55,15 @@
         <item name="android:fontFamily"></item>
     </style>
 
+    <style name="Inout" parent="Widget.AppCompat.EditText">
+        <item name="colorAccent">#E91E63</item>
+    </style>
+
+    <style name="round" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorAccent">#E91E63</item>
+        <item name="android:colorAccent">#E91E63</item>
+
+
+    </style>
+
 </resources>
