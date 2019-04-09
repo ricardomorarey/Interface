@@ -55,16 +55,26 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
             app:layout_constraintVertical_bias="1.0">
 
-            <com.ricardo.interfaces.Componentes.ItemMainSpinner
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                app:ims_editspin="Adios!!"/>
             <com.ricardo.interfaces.Componentes.ItemMain
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:im_et="Hola f"/>
+                app:im_et="Hola..."
+                app:im_image="R.drawable."/>
 
+            <com.ricardo.interfaces.Componentes.ItemMainSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ims_editspin="Adios!!"/>
 
+            <com.ricardo.interfaces.Componentes.ItemMainSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ims_editspin="By by..."/>
+
+            <com.ricardo.interfaces.Componentes.ItemMain
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:im_et="Goodby!!"/>
 
 
         </LinearLayout>
