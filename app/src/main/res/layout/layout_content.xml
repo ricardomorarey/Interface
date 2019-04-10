@@ -4,13 +4,14 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_gravity="start"
-              android:background="@color/colorPrimary"
+              android:background="@color/colorAccent"
               android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/layoutPerfil"
         android:layout_width="match_parent"
         android:layout_height="170dp"
+        android:background="@drawable/nav_fondo_bueno"
         android:clickable="true"
         android:orientation="vertical">
 
@@ -18,7 +19,7 @@
         <LinearLayout
             android:id="@+id/layout_image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -45,7 +46,7 @@
                         android:layout_gravity="center"
                         android:layout_margin="6dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/ic_menu_send"/>
+                        android:src="@drawable/ic_launcher" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -61,50 +62,53 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@color/colorPrimary"
+            android:background="@color/transparent"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txtFullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@color/transparent"
                 android:gravity="center"
-                android:singleLine="true"
                 android:text="Bienvenido"
+                android:singleLine="true"
                 android:textColor="@color/colorPrimaryText"
-                />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtFechaSincro"
+                android:text="Ultima sincronizacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@color/transparent"
                 android:gravity="center"
-                android:text="Ultima sincronizacion"
                 android:textColor="@color/colorPrimaryText"
-                />
+                android:textSize="15sp" />
+
 
             <TextView
                 android:id="@+id/txtDocumentosSincro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/transparent"
                 android:gravity="center"
-                android:text="text_documentos_sincronizados"
-                android:textColor="@color/colorPrimaryText"/>
+                android:text="holaaaaaaa"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="10sp" />
+
         </LinearLayout>
     </LinearLayout>
 
     <ListView
         android:id="@+id/list_drawer"
+        android:dividerHeight="0dp"
+        android:divider="@color/transparent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:choiceMode="singleChoice"
-        android:divider="@color/colorPrimaryDark"
-        android:dividerHeight="0dp"/>
+        android:choiceMode="singleChoice"/>
 
     <TextView
         android:id="@+id/textViewVersion"
@@ -113,10 +117,10 @@
         android:layout_gravity="end|bottom"
         android:background="@color/colorPrimary"
         android:gravity="end|bottom"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/black_overlay"
+        android:paddingTop="10dp"
         android:textStyle="italic"
-        />
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingRight="10dp"
+        android:textSize="8sp" />
 </LinearLayout>

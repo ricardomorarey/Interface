@@ -25,4 +25,6 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_chica">Chica</string>
     <string name="chica_layout">Chica Layout</string>
+    <string name="open_drawer">open</string>
+    <string name="close_drawer">close</string>
 </resources>

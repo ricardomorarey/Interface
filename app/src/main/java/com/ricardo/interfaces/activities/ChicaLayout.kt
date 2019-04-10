@@ -1,13 +1,11 @@
 package com.ricardo.interfaces.activities
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
-import com.ricardo.interfaces.Componentes.Componentes
 import com.ricardo.interfaces.R
-import kotlinx.android.synthetic.main.activity_chica_layout.*
+import kotlinx.android.synthetic.main.app_bar_main.*
 
 class ChicaLayout : AppCompatActivity() {
 
@@ -16,12 +14,6 @@ class ChicaLayout : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chica_layout)
-
-        floatingActionButton.setOnClickListener{ view ->
-            val intent = Intent (this, Componentes::class.java)
-            startActivity(intent)
-        }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
