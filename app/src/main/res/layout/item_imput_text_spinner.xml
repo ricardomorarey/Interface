@@ -5,8 +5,10 @@
               android:layout_width="match_parent"
               android:layout_height="72dp"
               android:orientation="horizontal"
-              android:padding="16dp">
-
+              android:paddingLeft="16dp"
+              android:paddingTop="8dp"
+              android:paddingRight="16dp"
+              android:paddingBottom="8dp">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -21,7 +23,7 @@
         android:id="@+id/inputNickName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1"
         android:theme="@style/round">
@@ -35,7 +37,7 @@
         android:id="@+id/spinner2"
         style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="0dp"
         android:layout_weight="1"

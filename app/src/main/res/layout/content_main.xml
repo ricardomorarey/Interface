@@ -59,22 +59,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:im_et="Hola..."
-                app:im_image="R.drawable."/>
+                app:im_image="@drawable/ic_menu_camera"/>
 
             <com.ricardo.interfaces.Componentes.ItemMainSpinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:ims_editspin="Adios!!"/>
+                app:ims_editspin="Adios!!"
+                app:ims_icon="@drawable/ic_chevron_right_black_24dp"/>
 
             <com.ricardo.interfaces.Componentes.ItemMainSpinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:ims_editspin="By by..."/>
+                app:ims_editspin="By by..."
+                app:ims_icon="@drawable/ic_label_black_24dp"/>
 
             <com.ricardo.interfaces.Componentes.ItemMain
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:im_et="Goodby!!"/>
+                app:im_et="Goodby!!"
+                app:im_image="@drawable/ic_inbox_black_24dp"/>
 
 
         </LinearLayout>

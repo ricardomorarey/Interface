@@ -11,20 +11,27 @@ import com.ricardo.interfaces.R
 
 class ItemMainSpinner(context: Context?, attrs: AttributeSet?): LinearLayout(context, attrs) {
 
-    private val icon: ImageView
+    private val iconImage: ImageView
 
     private val editText: TextInputLayout
 
     init {
         View.inflate(this.context, R.layout.item_imput_text_spinner,this)
 
-        icon = findViewById(R.id.imageView7)
+        iconImage = findViewById(R.id.imageView7)
         editText = findViewById(R.id.inputNickName)
 
         attrs?.let {
-            val typeArray = context!!.obtainStyledAttributes(it,
-                R.styleable.ItemMainSpinner, 0, 0)
-            editText.hint = typeArray.getString(R.styleable.ItemMainSpinner_ims_editspin)
+            val typeArray = context!!.obtainStyledAttributes(it, R.styleable.ItemMainSpinner, 0, 0)
+
+            // Recogo de app:
+            val place = typeArray.getString(R.styleable.ItemMainSpinner_ims_editspin)
+            val drawable = typeArray.getDrawable(R.styleable.ItemMainSpinner_ims_icon)
+
+            // Asigno
+            iconImage.setImageDrawable(drawable)
+            editText.hint = place
+            typeArray.recycle()
         }
 
     }

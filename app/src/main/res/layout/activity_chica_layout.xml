@@ -36,61 +36,55 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3"
             app:layout_constraintVertical_bias="0.593"
-            app:srcCompat="@drawable/ic_launcher_inbox_bici_person_circle"
+            app:srcCompat="@drawable/ic_person_black_24dp"
             tools:ignore="MissingConstraints"/>
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:gravity="center"
-        android:text="Irene J. Fritz"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="Irene J. Fritz"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
 
         <LinearLayout
             android:id="@+id/include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            app:layout_constraintTop_toBottomOf="@+id/tv_name">
 
             <com.ricardo.interfaces.Componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:st_title="Hola"
-                app:st_summary="Pruebas"/>
+                app:st_image="@drawable/ic_menu_gallery"
+                app:st_summary="En un lugar de la mancha de cuyo nombre no me quiero acordar"
+                app:st_title="Hola"/>
 
             <com.ricardo.interfaces.Componentes.SummaryText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:st_title="Pruebas"
-                app:st_summary="Testo decripinaosjnd"/>
+                app:st_image="@drawable/ic_menu_send"
+                app:st_summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"
+                app:st_title="Pruebas"/>
+
             <com.ricardo.interfaces.Componentes.SummaryText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:st_image="@drawable/ic_menu_share"
+                app:st_summary="There are many variations of passages of Lorem Ipsum available, but the majority"
+                app:st_title="Adios"/>
 
         </LinearLayout>
 
-
-
-    <include
-        layout="@layout/item_chica"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
